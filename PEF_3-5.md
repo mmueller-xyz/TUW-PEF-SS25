@@ -76,6 +76,7 @@ Portfolio of zero bonds matching each coupon and principal payment.
 #### At coupon adjustment dates, PV equals face value.
 #### Between coupon dates:
   $$PV_{t1} = (100 \times C_{t1}) \times P_{t1,t2}$$
+
 Here, "100" is the face value, and $C_{t1}$ is the coupon rate at date $t1$.
 $P_{t1,t2}$ is the discount factor between $t1$ and next coupon date $t2$.
 #### **Equivalent Portfolio**: 
