@@ -123,8 +123,12 @@ Exchange fixed and floating interest payments.
   - IRS Payer: Short coupon bond, long floater.
 
 ## Duration
-Used in sensitivity of bond price to interest rate changes measurement:
-  $$D = \frac{\sum_{j=1}^{J}PV(Z_j) \times T_j}{PV}$$
+Used in sensitivity of bond price to interest rate changes measurement.
+It is the weighted sum of times to payment flows ($T_j$), weighted by the present value of each payment flow.
+
+  $$D = \frac{\sum_{j=1}^{J}PV(Z_j) \times T_j}{PV(\text{Bond})}$$
+
+Remember that the PV of a future cashflow is the Cashflow ($Z_j$) times the discount factor ($P(T_j)$). The discount factor can be calculated using the spot rate of a zerobond with a maturety of $T_j$. See [#discount-factor](#discount-factor)
 
 ### Modified Duration (MD)
 - Approximate % PV change for a 1% rate change:
@@ -141,4 +145,4 @@ Used in sensitivity of bond price to interest rate changes measurement:
 ## Key Definitions
 - **Discount Factor ($P(T)$)**: Present value of 1 currency unit at time T.
 - **Spot Rate ($R$)**: Yield of a zero-coupon bond.
-- **Yield to Maturity (YTM)**: Annualized return if bond held to maturity.
+- **Yield to Maturity ($YTM$)**: Annualized return if bond held to maturity.
