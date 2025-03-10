@@ -33,6 +33,8 @@
       - [**Equivalent Portfolio**:](#equivalent-portfolio-6)
   - [Duration](#duration)
     - [Modified Duration (MD)](#modified-duration-md)
+    - [Dollar Duration](#dollar-duration)
+    - [Example](#example)
     - [Special Durations](#special-durations)
       - [**Zero Bond**:](#zero-bond)
       - [**Annuity Bond**:](#annuity-bond)
@@ -131,9 +133,23 @@ It is the weighted sum of times to payment flows ($T_j$), weighted by the presen
 Remember that the PV of a future cashflow is the Cashflow ($Z_j$) times the discount factor ($P(T_j)$). The discount factor can be calculated using the spot rate of a zerobond with a maturety of $T_j$. See [#discount-factor](#discount-factor)
 
 ### Modified Duration (MD)
-- Approximate % PV change for a 1% rate change:
-  $$MD = \frac{D}{1+r}, \quad \Delta PV \approx -MD \times PV \times \Delta r$$
+Approximate % PV change for a 1% (100 Basis Points) market rate change:
 
+  $$MD = \frac{D}{1+r}, \quad \frac{\Delta PV}{PV} \approx -MD \times \Delta r$$
+
+### Dollar Duration
+Approximate abs. PV change for a 1% (100 Basis Points) market rate change:
+
+$$DD = MD \times PV = D \times \frac{PV}{1+r}, \quad \Delta PV \approx -DD \times \Delta r$$
+
+### Example
+initial rate $r_0 = 5\% $, new rate $r_1 = 5.5\% $, maturity: $D=3$ years, PV = 100 CU (currency units)
+> $$MD = \frac{D}{1+r_1} = 3*\frac{1}{1.05} = 2.8571\% $$
+> $$DD = PV * MD = 2.8571 \text{CU} $$
+> $$\Delta r = {r_2-r_1} = 0.5\%$$
+
+> Approx. via MD: $$\frac{\Delta PV}{PV} = -MD * \Delta r = - 2.8571 * 0.5 = -1.42855 \% $$
+> Approx. via MD: $${\Delta PV} = -CU * \Delta r = 2.8571 * 0.5 = -1.42855 \text{CU} $$
 ### Special Durations
 #### **Zero Bond**:
   $$D = n$$
