@@ -148,8 +148,8 @@ initial rate $r_0 = 5\% $, new rate $r_1 = 5.5\% $, maturity: $D=3$ years, PV = 
 > $$DD = PV * MD = 2.8571 \text{CU} $$
 > $$\Delta r = {r_2-r_1} = 0.5\%$$
 
-> Approx. via MD: $$\frac{\Delta PV}{PV} = -MD * \Delta r = - 2.8571 * 0.5 = -1.42855 \% $$
-> Approx. via MD: $${\Delta PV} = -CU * \Delta r = 2.8571 * 0.5 = -1.42855 \text{CU} $$
+> Approx. via MD: $$\frac{\Delta PV}{PV} = -MD * \Delta r \approx - 2.8571 * 0.5 = -1.42855 \% $$
+> Approx. via MD: $${\Delta PV} = -CU * \Delta r = 2.8571 * 0.5 \approx -1.42855 \text{CU} $$
 ### Special Durations
 #### **Zero Bond**:
   $$D = n$$
