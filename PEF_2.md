@@ -66,13 +66,13 @@ $$
 ### Interest Calculation (Overdraft Facility)
 #### **Interest cost per sub-period ($Z_t$)**:
 $$
-Z_t = \frac{\text{Balance}_t \times r \times \text{(\# of days)}_t}{100 \times (360 \text{ or } 365)}
+Z_t = \frac{\text{Balance}_t \times r \times \text{(number of days)}_t}{100 \times (360 \text{ or } 365)}
 $$
 
 #### **Zinszahl (ZZ)**: changes over time
 
 $$
-\text{ZZ}_t = \frac{\text{Balance}_t \times \text{\#days}_t}{100}
+\text{ZZ}_t = \frac{\text{Balance}_t \times \text{number of days}_t}{100}
 $$
 
 #### **Zinsteiler (ZT)**: is constant. Different Banks may offer different rates, which can be compared.
@@ -134,7 +134,7 @@ $$
 
 #### **Mean Time to Maturity**:
 $$
-\text{\# periods without repayment} + \frac{\text{\# periods with repayment}+1}{2}
+\text{number of periods without repayment} + \frac{\text{number of periods with repayment}+1}{2}
 $$
 
 
