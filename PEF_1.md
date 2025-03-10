@@ -57,14 +57,14 @@ Evaluate a new project’s attractiveness by comparing:
 Measures duration from purchase of inventory to receipt of payment from customers.
 
 $$
-OC = InventoryDays + AccountsReceivable~Days
+\text{OC} = \text{InventoryDays} + \text{AccountsReceivable~Days}
 $$
 
 ### Cash Conversion Cycle (CCC)
 Time from cash outflow (inventory purchase) to cash inflow (sales receipt).
 
 $$
-CCC = OperatingCycle - AccountsPayable~Days
+\text{CCC} = \text{OperatingCycle} - \text{AccountsPayable~Days}
 $$
 
 ---
@@ -75,13 +75,13 @@ $$
 - If Firm Assets $>$ Debt:
 
 $$
-EquityPayoff = FirmAssets - Debt
+\text{EquityPayoff} = \text{FirmAssets} - \text{Debt}
 $$
 
 - If Firm Assets $<$ Debt:
 
 $$
-Equity~Payoff = 0
+\text{Equity~Payoff} = 0
 $$
 
 - Equity can be viewed as a call option on the firm’s assets with the strike price equal to the debt.
@@ -91,13 +91,13 @@ Debt payoff can be interpreted in two ways:
 - Firm Assets minus Equity Call Option:
 
 $$
-DebtPayoff = FirmAssets - EquityCallOption
+\text{DebtPayoff} = \text{FirmAssets} - \text{EquityCallOption}
 $$
 
 - Risk-free Bond minus Put Option:
 
 $$
-DebtPayoff = Risk\text{-}freebond - PutOptiononFirmAssets
+\text{DebtPayoff} = \text{Risk-freebond} - \text{Put Option on Firm Assets}
 $$
 
 - Equity holders hold a put option allowing transfer of downside risk to debt holders.
